@@ -1,8 +1,8 @@
-Bot Assigner
+Bot Assigner.
 
 El bot lee usuarios de un archivo excel usando Data Provider. Utiliza page objet model para mantener el codigo principal y las paginas
 
-bien estructuradas y legible. Haciendolo m·s sencillo de mantener y escribir los tests. 
+bien estructuradas y legible. Haciendolo m√°s sencillo de mantener y escribir los tests. 
 
 Inicia Chrome en la URL de tickets, Si el usuario esta en shift, inicia el bucle que se va a repetir hasta que encuentre un ticket sin asignar.
 
@@ -10,11 +10,11 @@ Si el usuario no esta en shift, pasa al siguiente y hace la verificacion de nuev
 
 Imprime el NTID y QUEUE del usuario en shift al que se le va a asignar un ticket.
 
-Selecciona la pestaÒa de MyQueues (desde un ENUM con la lista de solapas del header),
+Selecciona la pesta√±a de MyQueues (desde un ENUM con la lista de solapas del header),
 
 en donde esta la lista de todos los tickets y un dropdown para seleccionar la queue.
 
-Espera 20 segundos (esa pagina tardaba mucho en cargar, a veces no respondia), si no cargaba, cambia de puestaÒa y vuelve, para hacer un refresh.
+Espera 20 segundos (esa pagina tardaba mucho en cargar, a veces no respondia), si no cargaba, cambia de puesta√±a y vuelve, para hacer un refresh.
 
 Selecciona un checkbox para mostrar solo los tickets sin asignar, seleccionaba el dropdown de queues y verificaba que este la queue
 
@@ -36,9 +36,12 @@ repite los pasos para asignar, pero en vez de hacer asignacion, pone el ticket e
 
 Llama a la funcion sendMail que usa un batch con codigo para enviar mail, enviando el numero de ticket al usuario actual.
 
-Da un mensaje en consola de que se asignÛ un ticket y espera 2 minutos para actualizar la pagina antes de repetir el proceso con
+Da un mensaje en consola de que se asign√≥ un ticket y espera 2 minutos para actualizar la pagina antes de repetir el proceso con
 
 el siguiente usuario (la pagina tarda aproximadamente 2 minutos en actualizar el estado del ticket) y evitar reasignar el mismo ticket.
 
 Incrementa el contador de tickets, imprime mensajes de estado, la hora, y pasa al siguiente usuario para repetir el proceso.
 
+//**Ningun dato privado, critico o confidencial fue incluido en este c√≥digo. Los usuarios son falsos y la pagina de tickets es inexistente. Fue compartido s√≥lo 
+
+a modo de muestra para analizar su estructura y contenido.**//
